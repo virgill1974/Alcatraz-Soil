@@ -1,6 +1,7 @@
 # Alcatraz-Soil
 Amiga500 40k intro. Created with vscode-amiga-debug by bartman/abyss
 
+https://www.pouet.net/prod.php?which=95887
 
    release name: Soil                         
            type: Amiga 500 - 40k intro        
