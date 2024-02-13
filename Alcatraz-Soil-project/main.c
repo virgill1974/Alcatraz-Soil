@@ -22,11 +22,11 @@
 // 23  - 2  :   ship fade in
 // 71  - 5  :  	disco disco low
 // 103 - 7  :  	disco disco high
-// 135 - 9	:	start xor part
+// 135 - 9  :	start xor part
 // 167 - 11 :	2nd xor part stripes
-// 199 - 13	:	3rd xor part invader
-// 231 - 15	:   bubbles
-// 263 - 17	:   bubbles
+// 199 - 13 :	3rd xor part invader
+// 231 - 15 :   bubbles
+// 263 - 17 :   bubbles
 // 295 - 19 : 	firefucker
 // 359 - 23 : 	sines
 
@@ -84,7 +84,7 @@ UBYTE* bitplane3;
 
 UBYTE bitplane4[32*256*2] __attribute__((section (".MEMF_CHIP"))) = {};
 UBYTE bitplane_empty[32*256] __attribute__((section (".MEMF_CHIP"))) = {};
-UBYTE drawbyte[32*8] __attribute__((section (".MEMF_FAST"))) = {};
+UBYTE drawbyte[32*8] __attribute__((section (".MEMF_ANY"))) = {};
 UBYTE bmptest[32*64] __attribute__((section (".MEMF_CHIP"))) = {};  // temporary memory for scroller
 
 
@@ -693,7 +693,7 @@ static __attribute__((interrupt)) void interruptHandler() {
 
 	// Amigaklang sample generator
 	void generate() { 
-		UBYTE* AK_Work = (UBYTE*)AllocMem(32768,MEMF_FAST);
+		UBYTE* AK_Work = (UBYTE*)AllocMem(32768,MEMF_ANY);
 		register volatile const void* _a0 ASM("a0") = AK_Samples;
 		register volatile const void* _a1 ASM("a1") = AK_Work;
 		register volatile const void* _a2 ASM("a2") = AK_External_Samples;
