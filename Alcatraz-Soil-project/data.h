@@ -1,5 +1,5 @@
 #define textcnt 36-1
-UBYTE text[] __attribute__((section (".MEMF_FAST")))  = {	
+UBYTE text[] __attribute__((section (".MEMF_ANY")))  = {	
 "              "
 "              "
 "x   ABYSS     "
@@ -39,7 +39,7 @@ UBYTE text[] __attribute__((section (".MEMF_FAST")))  = {
 };
 
 #define textcnt2 10-1
-UBYTE text2[] __attribute__((section (".MEMF_FAST")))  = {	
+UBYTE text2[] __attribute__((section (".MEMF_ANY")))  = {	
 "     SOIL     "
 " ____________ "
 " CODE _ MUSIC "
@@ -51,7 +51,7 @@ UBYTE text2[] __attribute__((section (".MEMF_FAST")))  = {
 "              "
 };
 
-UBYTE text3[] __attribute__((section (".MEMF_FAST")))  = {	
+UBYTE text3[] __attribute__((section (".MEMF_ANY")))  = {	
 "   CALL OUR   "
 "    BOARDS    "
 " ____________ "
@@ -63,7 +63,7 @@ UBYTE text3[] __attribute__((section (".MEMF_FAST")))  = {
 "              "
 };
 
-UBYTE text4[] __attribute__((section (".MEMF_FAST")))  = {	
+UBYTE text4[] __attribute__((section (".MEMF_ANY")))  = {	
 "  THANKS FOR  "
 "  YOUR MONEY  "
 " ____________ "
@@ -75,7 +75,7 @@ UBYTE text4[] __attribute__((section (".MEMF_FAST")))  = {
 "              "
 };
 
-UBYTE invader_data1[ ] __attribute__((section (".MEMF_FAST")))  = {	
+UBYTE invader_data1[ ] __attribute__((section (".MEMF_ANY")))  = {	
 0x00, 0x30, 0x0c, 0x00,  // every bit is a byte on plane
 0x00, 0x0f, 0xf0, 0x00,
 0x00, 0x3f, 0xfc, 0x00, 
@@ -86,7 +86,7 @@ UBYTE invader_data1[ ] __attribute__((section (".MEMF_FAST")))  = {
 0x00, 0x0c, 0x30, 0x00
 };
 
-UBYTE invader_data2[ ] __attribute__((section (".MEMF_FAST"))) = {	
+UBYTE invader_data2[ ] __attribute__((section (".MEMF_ANY"))) = {	
 0x00, 0xc0, 0x03, 0x00,
 0x00, 0x30, 0x0c, 0x00, 
 0x00, 0xff, 0xff, 0x00, 
@@ -375,7 +375,7 @@ UWORD copperlist_precalc[] __attribute__((section (".MEMF_CHIP"))) = {
 	0xffff, 0xfffe // end copper list
 };
 
-UBYTE sine64x256[] __attribute__((section (".MEMF_FAST"))) = {
+UBYTE sine64x256[] __attribute__((section (".MEMF_ANY"))) = {
 0x20,0x21,0x22,0x22,0x23,0x24,0x25,0x25,
 0x26,0x27,0x28,0x29,0x29,0x2a,0x2b,0x2c,
 0x2c,0x2d,0x2e,0x2e,0x2f,0x30,0x30,0x31,
@@ -412,51 +412,51 @@ UBYTE sine64x256[] __attribute__((section (".MEMF_FAST"))) = {
 
 
 // colors main fx green
-UWORD bitplanecolors1[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD bitplanecolors1[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0000, 0x0010,0x0121,0x0131,0x0242,0x0353,0x0464,0x0575,
 	0x0686, 0x0797,0x08a8,0x09b9,0x0aca,0x0bdb,0x0cec,0x0dfd
 	};
 // colors main fx blue
-UWORD bitplanecolors2[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD bitplanecolors2[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0000,0x0001,0x0112,0x0113,0x0224,0x0335,0x0446,0x0557,
 	0x0668,0x0779,0x088a,0x099b,0x0aac,0x0bbd,0x0cce,0x0ddf
 	};
 // colors main fx cyan
-UWORD bitplanecolors3[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD bitplanecolors3[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0000,0x0011,0x0122,0x0133,0x0244,0x0355,0x0466,0x0577,
 	0x0688,0x0799,0x08aa,0x09bb,0x0acc,0x0bdd,0x0cee,0x0dff
 	};
 // colors main fx yellow
-	UWORD bitplanecolors4[] __attribute__((section (".MEMF_FAST"))) = {
+	UWORD bitplanecolors4[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0000,0x0110,0x0221,0x0331,0x0442,0x0553,0x0664,0x0775,
 	0x0886,0x0997,0x0aa8,0x0bb9,0x0cca,0x0ddb,0x0eec,0x0ffd
 	};
 
 
 // colors main fx green inverted
-UWORD bitplanecolors1i[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD bitplanecolors1i[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0dfd,0x0cec,0x0bdb,0x0aca,0x09b9,0x08a8,0x0797,0x0686,
 	0x0575,0x0464,0x0353,0x0242,0x0131,0x0121,0x0010,0x0000
 	};
 // colors main fx blue inverted
-UWORD bitplanecolors2i[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD bitplanecolors2i[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0ddf,0x0cce,0x0bbd,0x0aac,0x099b,0x088a,0x0779,0x0668,
 	0x0557,0x0446,0x0335,0x0224,0x0113,0x0112,0x0001,0x0000
 	};
 // colors main fx cyan inverted
-UWORD bitplanecolors3i[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD bitplanecolors3i[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0dff,0x0cee,0x0bdd,0x0acc,0x09bb,0x08aa,0x0799,0x0688,
 	0x0577,0x0466,0x0355,0x0244,0x0133,0x0122,0x0011,0x0000
 	};
 // colors main fx yellow inverted
-	UWORD bitplanecolors4i[] __attribute__((section (".MEMF_FAST"))) = {
+	UWORD bitplanecolors4i[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0ffd,0x0eec,0x0ddb,0x0cca,0x0bb9,0x0aa8,0x0997,0x0886,
 	0x0775,0x0664,0x0553,0x0442,0x0331,0x0221,0x0110,0x0000
 	};
 
 
 // colors title logo
-UWORD bitplanecolors_title[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD bitplanecolors_title[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0000, 0x0111, 0x0fff, 0x08ff, 0x05de, 0x03bc, 0x019a, 0x0189,
 	0x0167, 0x0156, 0x0145, 0x0034, 0x0023, 0x0012, 0x07aa, 0x0478
 	}; 
@@ -464,13 +464,13 @@ UWORD bitplanecolors_title[] __attribute__((section (".MEMF_FAST"))) = {
 
 
 // bitplane color buffer	
-UWORD bitplanecolorcalc[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD bitplanecolorcalc[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0000, 0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,
 	0x0000, 0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000
 	};
 
 // sprite colors (and bitplane 5)
-UWORD spritecolors[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD spritecolors[] __attribute__((section (".MEMF_ANY"))) = {
 	//      ------stripe--------          ------invader-------
 	0x0000, 0x0888,0x0666,0x0aaa,  0x0111,0x0555,0x0777,0x0aaa,
 	//		------invader-------          -------ship---------
@@ -478,19 +478,19 @@ UWORD spritecolors[] __attribute__((section (".MEMF_FAST"))) = {
 	};
 
 // sprite color buffer	
-UWORD spritecolorcalc[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD spritecolorcalc[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0000, 0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,
 	0x0000, 0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000
 	};
 
 
 // bubble colors
-UWORD bubblecolors[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD bubblecolors[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0112, 0x0224,0x0446,0x0668,0x0446,0x0335,0x0335,0x0335,
 	0x077b, 0x066a,0x066a,0x066a,0x0bbd,0x0aac,0x0aac,0x0aac
 	}; 
 // bubble colors high plane (text+sprites)
-UWORD bubblecolors2[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD bubblecolors2[] __attribute__((section (".MEMF_ANY"))) = {
          // ------stripe--------        -----bubble--------
 	0x0aac, 0x0666,0x066a,0x0aac,0x0446,0x0446,0x066a,0x0aac,        
 	0x077b, 0x066a,0x066a,0x066a,0x0bbd,0x0aac,0x0aac,0x0aac
@@ -499,54 +499,54 @@ UWORD bubblecolors2[] __attribute__((section (".MEMF_FAST"))) = {
 
 
 // fire colors red
-UWORD firecolors1[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD firecolors1[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0000,0x0200,0x0400,0x0600,0x0800,0x0a00,0x0c00,0x0e00,
 	0x0f10,0x0f30,0x0f50,0x0f70,0x0f90,0x0fb0,0x0fd0,0x0ff0
 	};
 // fire colors red darker
-UWORD firecolors1_dark[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD firecolors1_dark[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0600,0x0600,0x0600,0x0600,0x0600,0x0600,0x0600,0x0600,
 	0x0600,0x0600,0x0800,0x0a00,0x0c00,0x0e00,0x0f10,0x0f30
 	};	
 
 // fire colors blue
-UWORD firecolors2[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD firecolors2[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0000,0x0002,0x0004,0x0006,0x0008,0x000a,0x000c,0x000e,
 	0x001f,0x003f,0x005f,0x007f,0x009f,0x00bf,0x00df,0x00ff
 	};
 // fire colors blue darker
-UWORD firecolors2_dark[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD firecolors2_dark[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0000,0x0006,0x0006,0x0006,0x0006,0x0006,0x0006,0x0006,
 	0x0006,0x0006,0x0008,0x000a,0x000c,0x000e,0x001f,0x003f
 	};	
 
 
 // sine colors grey blue
-UWORD sinecolors1[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD sinecolors1[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0000,0x0222,0x0444,0x0666,0x0888,0x0aaa,0x0ccc,0x0eee,
 	0x001f,0x003f,0x005f,0x007f,0x009f,0x00bf,0x00df,0x00ff
 };
 
 // sine colors grey blue bright
-UWORD sinecolors1_bright[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD sinecolors1_bright[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0666,0x0666,0x0888,0x0aaa,0x0eee,0x0fff,0x0fff,0x0fff,
 	0x066f,0x066f,0x088f,0x0aaf,0x0eef,0x0fff,0x0fff,0x0fff
 };
 
 // sine colors grey red
-UWORD sinecolors3[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD sinecolors3[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0000,0x0222,0x0444,0x0666,0x0888,0x0aaa,0x0ccc,0x0eee,
 	0x0f10,0x0f30,0x0f50,0x0f70,0x0f90,0x0fb0,0x0fd0,0x0ff0
 };
 
 // sine colors grey red bright
-UWORD sinecolors3_bright[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD sinecolors3_bright[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0666,0x0666,0x0888,0x0aaa,0x0eee,0x0fff,0x0fff,0x0fff,
 	0x0f66,0x0f66,0x0f88,0x0faa,0x0fee,0x0fff,0x0fff,0x0fff
 	};
 
 // endpic colors 
-UWORD endpiccolors[] __attribute__((section (".MEMF_FAST"))) = {
+UWORD endpiccolors[] __attribute__((section (".MEMF_ANY"))) = {
 	0x0000,0x0156,0x08ff,0x00bd,0x0079,0x0023,0x0000,0x0000,
 	0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000
 	};
